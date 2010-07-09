@@ -1,0 +1,3 @@
+h1. Clientraw.txt Parser
+
+This is a small php class that parses clientraw.txt and creates 4 arrays.
