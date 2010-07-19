@@ -21,11 +21,10 @@ class clientraw {
 
     function create_named(){
         $this->named = array(
-            "current_temperature" => $this->raw[4]
+            "current_temperature" => $this->raw[4],
+            "todays_rain_fall" => $this->raw[7],
+            "generated" => $this->raw[29].":".$this->raw[30]." ".$this->raw[35]."/".$this->raw[36]."/".$this->raw[141]
         );
     }
 }
-
-$craw = new clientraw("./raw/");
-echo $craw->named["current_temperature"]
 ?>
